@@ -1,57 +1,55 @@
+from typing import Literal
 from config.settings import SETTINGS
-from config.utils import to_lowercase_if_needed, clean_spaces
+
+Tone = Literal["neutral", "viral", "analysis"]
+
+def to_lower(text: str) -> str:
+    if getattr(SETTINGS, "lowercase_posts", False):
+        return text.lower()
+    return text
 
 
-def obs_mech_impl(observation: str, mechanism: str, implication: str) -> str:
-    text = f"{observation}\n\n{mechanism}\n\n{implication}"
-    text = clean_spaces(text)
-    return to_lowercase_if_needed(text, SETTINGS.lowercase_posts)
+def build_post_variants(insight: str, tone: Tone = "neutral") -> dict:
+    """
+    Generates X / social media post variants from a sports insight.
+    """
 
+    neutral = f"""
+observation
+{insight}
 
-def build_post_variants(insight: dict, tone: str = "simple") -> str:
-    obs  = insight.get("observation", "")
-    mech = insight.get("mechanism", "")
-    impl = insight.get("implication", "")
-    tag  = insight.get("tag", "")
+mechanism
+games shift when one hidden edge tilts the environment.
 
-    lc = SETTINGS.lowercase_posts
+implication
+if the edge holds, the scoreboard usually follows.
+"""
 
-    if tone == "simple":
-        return obs_mech_impl(obs, mech, impl)
+    viral = f"""
+fans see the scoreboard
 
-    if tone == "analytical":
-        tag_txt = f" ({tag})" if tag else ""
-        text = clean_spaces(f"{obs}\n\n{mech}\n\n{impl}{tag_txt}")
-        return to_lowercase_if_needed(text, lc)
+frame² sees the edge
 
-    if tone == "one-liner":
-        tag_txt = f" ({tag})" if tag else ""
-        text = clean_spaces(f"{obs}{tag_txt}")
-        return to_lowercase_if_needed(text, lc)
+{insight}
+"""
 
-    return obs_mech_impl(obs, mech, impl)
+    analysis = f"""
+observation
+{insight}
 
+mechanism
+contact quality
+plate discipline
+run expectancy swings
 
-def three_ready_lines(observation: str, mechanism: str, implication: str, tag: str = ""):
-    tag_txt = f" ({tag})" if tag else ""
-    minimal = to_lowercase_if_needed(
-        clean_spaces(observation + tag_txt), SETTINGS.lowercase_posts
-    )
-    mechanism_line = obs_mech_impl(observation, mechanism, implication + tag_txt)
-    funny = to_lowercase_if_needed(
-        clean_spaces(f"{observation}\n\n{mechanism}\n\nvariance undefeated.{tag_txt}"),
-        SETTINGS.lowercase_posts,
-    )
-    return minimal, mechanism_line, funny
+implication
+process eventually beats variance.
+"""
 
+    posts = {
+        "neutral": to_lower(neutral.strip()),
+        "viral": to_lower(viral.strip()),
+        "analysis": to_lower(analysis.strip()),
+    }
 
-def quick_library_samples():
-    posts = [
-        "variance undefeated.",
-        "incentives shape outcomes.",
-        "systems produce behavior.",
-        "pressure changes decision quality.",
-        "result ≠ process.",
-        "clarity is rare because noise is addictive.",
-    ]
-    return [to_lowercase_if_needed(p, SETTINGS.lowercase_posts) for p in posts]
+    return posts
