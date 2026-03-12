@@ -60,7 +60,7 @@ automatically convert analytics into ready-to-post insights.
 ![franchise timeline](images/frame2_franchise_timeline.png)
 
 ### history post generator
-![post generator](images/frame2_post_generator.png)
+![history post](images/frame2_post_generator.png)
 
 ---
 
