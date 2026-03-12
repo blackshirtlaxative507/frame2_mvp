@@ -30,3 +30,23 @@ pip install -r requirements.txt
 
 streamlit run app.py
 
+![Red Sox Process vs Result](redsox_process_vs_result.png)---
+## demo
+
+### core + pipeline explorer
+
+![core explorer](screenshots/frame2_explorer.png)
+
+---
+
+### franchise timeline
+
+![franchise timeline](screenshots/frame2_franchise_timeline.png)
+
+---
+
+### season insight generator
+
+![season insight generator](screenshots/frame2_post_generator.png)
+## creator
+
