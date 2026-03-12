@@ -15,8 +15,8 @@ observation → mechanism → implication
 
 ## example
 
-fans see: a comeback
-frame² sees: the pitcher losing the strike zone
+fans see: a red sox season
+frame² sees: a red sox season compared to other red sox seasons
 
 ![frame² example](redsox_process_vs_result.png)
 
