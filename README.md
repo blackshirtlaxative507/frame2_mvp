@@ -52,7 +52,11 @@ open in browser:
 
 http://localhost:8501
 
----
+## red sox process vs result model
+
+visualizing when performance matches underlying process.
+
+![Red Sox Process vs Result](redsox_process_vs_result.png)---
 
 ## creator
 
