@@ -46,6 +46,24 @@ these signals help reveal the **mechanism behind outcomes**.
 
 ---
 
+## philosophy
+
+most fans watch the scoreboard.
+
+frame² tries to explain why the scoreboard moved.
+
+the engine looks for hidden signals such as:
+
+• contact quality  
+• plate discipline  
+• run expectancy swings  
+• roster construction  
+• development pipeline
+
+these signals help reveal the mechanism behind outcomes.
+
+---
+
 ## features
 
 ### red sox intelligence dashboard
@@ -90,6 +108,32 @@ automatically convert analytics into ready-to-post insights.
 <p align="center">
 <img src="images/frame2_post_generator.png" width="900">
 </p>
+
+---
+
+## roadmap
+
+planned upgrades for frame²:
+
+- live game ingestion
+- automated tilt detection
+- multi-sport support (nba / nfl / mlb)
+- real-time insight generation
+- integration with social publishing pipelines
+
+---
+
+## project structure
+
+frame2_mvp/
+
+├── app.py                # streamlit dashboard  
+├── engine.py             # edge detection + analysis logic  
+├── data.py               # example game/team inputs  
+├── posts.py              # insight → post generator  
+├── images/               # README screenshots  
+├── scripts/              # utilities + helpers  
+└── requirements.txt      # python dependencies
 
 ---
 
