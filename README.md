@@ -1,52 +1,77 @@
-# frame² — red sox MVP
+# frame² – sports intelligence engine
 
-frame² is a sports intelligence app.
+frame² is a lightweight sports analytics and content engine built to explain games through **process vs result**.
 
-most sports sites show statistics.
-frame² explains **why the game changed.**
+the goal is simple:
 
-core idea:
-
-result = process + variance
-
-framework:
-
-observation → mechanism → implication
-
-## example
-
-fans see: a red sox season
-frame² sees: a red sox season compared to other red sox seasons
-
-![frame² example](redsox_process_vs_result.png)
-
-## run locally
-
-git clone https://github.com/dualityframework-ux/frame2_redsox_mvp
-
-cd frame2_redsox_mvp
-
-pip install -r requirements.txt
-
-streamlit run app.py
-
-![Red Sox Process vs Result](redsox_process_vs_result.png)---
-## demo
-
-### core + pipeline explorer
-
-![core explorer](screenshots/frame2_explorer.png)
+observe → detect the edge → explain the mechanism → generate insights.
 
 ---
 
-### franchise timeline
+# core ideas
 
-![franchise timeline](screenshots/frame2_franchise_timeline.png)
+most fans watch the scoreboard.
+
+frame² tries to explain **why the scoreboard moved**.
+
+the model focuses on identifying hidden drivers such as:
+
+- contact quality
+- plate discipline
+- run expectancy swings
+- roster structure
+- development pipeline
+
+these signals reveal the **mechanism behind outcomes**.
 
 ---
 
-### season insight generator
+# features
 
-![season insight generator](screenshots/frame2_post_generator.png)
-## creator
+## red sox intelligence dashboard
+
+explore historical eras and identify what drove each team's success.
+
+## franchise timeline
+
+visualize the full history of the franchise including:
+
+- world series seasons
+- playoff runs
+- rebuilding periods
+- emerging cores
+
+## core + pipeline explorer
+
+see which players carried each era and how strong the organizational pipeline was.
+
+## history post generator
+
+automatically convert analytics into ready-to-post insights.
+
+---
+
+# screenshots
+
+## core + pipeline explorer
+
+![core pipeline](assets/core_pipeline.png)
+
+---
+
+## franchise timeline
+
+![timeline](assets/franchise_timeline.png)
+
+---
+
+## history post generator
+
+![post generator](assets/post_generator.png)
+
+---
+
+# run locally
+
+clone repo
 
